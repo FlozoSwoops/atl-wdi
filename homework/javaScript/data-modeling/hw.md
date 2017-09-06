@@ -60,14 +60,21 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
-
+> var toDoList = {
+  name:
+  location:
+  completionTime:
+}
+This will allow you to group tasks together as well as give names and est time of completion in order to help plan out the order of tasks
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
-
+> let photoApp = {
+  dateTaken:
+  placeTaken:
+}
+These two values will make it eaier to group pictures into albums.
 ### 3. Home Automation Manager
 
 This app will be a tool for managing a home automation system; it will keep
@@ -75,7 +82,10 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+let autoHome = {
+  time:
+  temp:
+} 
 
 ### 4. Sneaker Store
 
@@ -83,7 +93,10 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+let sneakerApp = {
+  Price:
+  tax:
+}
 
 ## Representing Abstractions in Code
 
@@ -139,8 +152,7 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
-
+ An advantage of this is that you will have all the stops on your route. The disadvantage of adding in all the stops is it could potentially 
 ### 6. Doctor Appointment App
 
 Consider an app for helping patients and doctors schedule appointments.
@@ -242,7 +254,7 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+>The advantage of option one is it list all the doctors appoointments. This would make it much easier to view availablity and make an appointment on ussing the app. It is more patient booking orientented. The  second option would be better for an appointment organizer. 
 
 ## Tying It Together
 
@@ -253,13 +265,30 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+  >let player = {
+    name:
+    defaultPhoto:
+  }
+
+  let board = {
+    size:
+    color:
+  }
+
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+  > let player = {
+    name: Mflores1
+    defaultPhoto: img url
+  }
+
+  let board = {
+    size: 100blackpx 100px
+    color: red and black 
+  }
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
 
-  > Answer here
+  > these are the basics that will let you know who your playing and what size th board is your playing on.
