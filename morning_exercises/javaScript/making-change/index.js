@@ -5,10 +5,10 @@
 /// DO NOT EDIT ABOVE THIS LINE ///
 
 var makeChange = function(price, payment) {
-  // Your Code Here
-};
-
+  // given price and payment amount
+  //
 /// DO NOT EDIT BELOW THIS LINE ///
 module.exports = {
   makeChange: makeChange
+  
 };
