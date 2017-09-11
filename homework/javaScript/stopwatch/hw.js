@@ -18,16 +18,40 @@ const Stopwatch = {
   laps: [],
   // DO NOT EDIT ABOVE THIS LINE
   advanceTenMillisecs: function(){
-    // Your Code Here
+    millisecs += 10
+    if (millisecs = 100) {
+      millisecs -= 100;
+      sec += 1;
+    } 
+    if (sec = 60) {
+      sec -= 60
+      min += 1
+    }
   },
   reset: function(){
-    // Your Code Here
+    let $reset = $('#stop');
+    $reset.on('click', funtion() {
+      if (millisecs !== 00 && sec !== 0 && min !== 0) {
+        millisecs = 0
+        sec = 0
+        min = 0 
+      }
+     })
   },
   start: function(){
-    // Your Code Here
+    let $start = $('start');
+    $start.on('click', function() {
+      isRunning = true;
+      this.tickClock()
+    })
+    
   },
   stop: function(){
-    // Your Code Here
+    let $stop = $('stop');
+    $stop.on('click', function() {
+      isRunning = false;
+      console.log('hi');
+    })
   },
   lap: function(){
     // Your Code Here
