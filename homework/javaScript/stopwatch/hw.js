@@ -50,7 +50,6 @@ const Stopwatch = {
     let $stop = $('stop');
     $stop.on('click', function() {
       isRunning = false;
-      console.log('hi');
     })
   },
   lap: function(){

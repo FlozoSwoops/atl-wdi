@@ -47,15 +47,19 @@ var allGreaterThanTen = function(numsArray){
         console.log('false')
       }
     }
-  }
-
-};
+  };
 
 // #4
 // Input: an array of words
 // Output: an array of all words from the first array with five or more letters
 var wordsWithAtLeastFiveLetters = function(words){
   let result = [];
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length >= 5) {
+      results.push(words[i]);
+    }
+  }
+  return results;
   
   
 };
