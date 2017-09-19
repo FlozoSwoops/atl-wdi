@@ -10,7 +10,7 @@
 // Input: an array of numbers
 // Output: the sum of the numbers that were passed in
 // Edge Case: If the array is empty, return 0
-var sumOfNums = function(numsArray){
+var sumOfNums = function (numsArray) {
   var sum = 0;
   for (var i = 0; i < numsArray.length; i++) {
     sum += numsArray[i];
@@ -22,7 +22,7 @@ var sumOfNums = function(numsArray){
 // Input: an array of numbers
 // Output: an array of the numbers from the first array that are strictly
 //         greater (i.e. greater than but not equal to) than 10
-var numsGreaterThanTen = function(numsArray){
+var numsGreaterThanTen = function (numsArray) {
   var result = [];
   for (var i = 0; i < numsArray.length; i++)
     if (numsArray[i] > 10) {
@@ -36,23 +36,24 @@ console.log(result);
 // Output: `true` if ALL numbers passed in are strictly greater than 10;
 //         `false` otherwise
 // Edge Case: If the input array is empty, the function should return `true`.
-var allGreaterThanTen = function(numsArray){
-  for (var i=0; i < numsArray.length; i++) {
-    if (numsArray > 10) { 
-      console.log( "true")}
+var allGreaterThanTen = function (numsArray) {
+  for (var i = 0; i < numsArray.length; i++) {
+    if (numsArray > 10) {
+      console.log("true")
+    }
     else if (numsArray === []) {
       console.log('true');
     }
-      else {
-        console.log('false')
-      }
+    else {
+      console.log('false')
     }
-  };
+  }
+};
 
 // #4
 // Input: an array of words
 // Output: an array of all words from the first array with five or more letters
-var wordsWithAtLeastFiveLetters = function(words){
+var wordsWithAtLeastFiveLetters = function (words) {
   let result = [];
   for (var i = 0; i < words.length; i++) {
     if (words[i].length >= 5) {
@@ -60,8 +61,8 @@ var wordsWithAtLeastFiveLetters = function(words){
     }
   }
   return results;
-  
-  
+
+
 };
 
 // #5
@@ -69,7 +70,7 @@ var wordsWithAtLeastFiveLetters = function(words){
 // Output: `true` if ALL words start with the letter 'a' (case-insensitive),
 //          `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
-var allStartingWithA = function(words){
+var allStartingWithA = function (words) {
   // Your Code Here
 };
 
@@ -77,8 +78,13 @@ var allStartingWithA = function(words){
 // Input: an array of words
 // Output: `true` if there are ANY words that start with the letter 'b'
 //          (case-insensitive), `false` otherwise
-var anyStartingWithB = function(words){
-  // Your Code Here
+var anyStartingWithB = function (words) {
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].slice(0, 1) === 'b' || words[i].slice(0, 1) === 'B') {
+      return true;
+    }
+  }
+  return false;
 };
 
 // #7
@@ -87,15 +93,17 @@ var anyStartingWithB = function(words){
 //          `false` otherwise
 //    Assume that vowels are 'a', 'e', 'i', 'o', and 'u' (NOT 'y')
 // Edge Case: If `n` is less than zero, return `null`.
-var hasAtLeastNVowels = function(word, n){
-  // Your Code Here
+var hasAtLeastNVowels = function (word, n) {
+  if (n > 0) {
+    if 
+  }
 };
 
 // #8
 // Input: an array of words
 // Output: an array of words from the original array that have at least two
 //          vowels
-var wordsWithAtLeastTwoVowels = function(words){
+var wordsWithAtLeastTwoVowels = function (words) {
   // Your Code Here
 };
 
@@ -103,7 +111,7 @@ var wordsWithAtLeastTwoVowels = function(words){
 // Input: an array of words
 // Output: `true` if ALL words have two or more vowels, `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
-var allHaveAtLeastTwoVowels = function(words){
+var allHaveAtLeastTwoVowels = function (words) {
   // Your Code Here
 };
 
@@ -111,7 +119,7 @@ var allHaveAtLeastTwoVowels = function(words){
 // Input: an array of words
 // Output: `true` if there are ANY words have two or more vowels,
 //          `false` otherwise.
-var anyHaveAtLeastTwoVowels = function(words){
+var anyHaveAtLeastTwoVowels = function (words) {
   // Your Code Here
 };
 
@@ -120,7 +128,7 @@ var anyHaveAtLeastTwoVowels = function(words){
 // Output: `true` if NONE of the words have two or more vowels,
 //          `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
-var noneHaveTwoOrMoreVowels = function(words){
+var noneHaveTwoOrMoreVowels = function (words) {
   // Your Code Here
 };
 
@@ -130,7 +138,7 @@ var noneHaveTwoOrMoreVowels = function(words){
 //          tied to that key is the length of the word.
 // e.g. given ['cat', 'horse', 'elephant'],
 //      return { cat: 3, horse: 5, elephant: 8}
-var buildObjectFromWords = function(words){
+var buildObjectFromWords = function (words) {
   // Your Code Here
 };
 
