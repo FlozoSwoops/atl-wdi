@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express()
+const hbs = ('hbs')
+
+app.set('viewenine', 'hbs')
+app.set('views','./views')
 
 app.get("/", (req,res) => {
     res.send("Welcome to pizza Express")
