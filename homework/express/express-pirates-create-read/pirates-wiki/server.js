@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
 const hbs = require('hbs')
-const pirateController = require('./controllers/pirates.js')
+const pirateController = require('./controllersz/pirates.js')
+const bodyParser = require('body-parser');
 
 //views
 app.set("view engine", "hbs")
