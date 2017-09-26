@@ -34,7 +34,7 @@ B) B) Add a pointer to buttons and links.
 8.  A)3 B)6
 9. A)https://github.com/ATL-WDI-Curriculum/atl-wdi/wiki/API-Aggregators 
     https://www.programmableweb.com/apis/directory
-10. https://github.com/ATL-WDI-Curriculum/atl-wdi/wiki/API-Aggregators
+10. Labor Day and Veterans Day
 
 ## Submitting Your Work
 
