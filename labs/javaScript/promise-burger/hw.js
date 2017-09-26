@@ -6,7 +6,11 @@ const kitchen = require('./kitchen');
 // 1. Kitchen has a method called `.readMenu`.  
 // Call this method and console.log the data that comes back when the Promise is resolved.
 
-//CODE FOR QUESTION 1 HERE
+
+//console.log(readMenu())
+
+kitchen.readMenu().then(console.log).catch(console.log)
+
 
 
 // Order Some Food
@@ -15,15 +19,14 @@ const kitchen = require('./kitchen');
 //  The order method has one argument, the name of the burger you would like to order.  
 //  Console.log the data that comes back about this burger.
 
-// CODE FOR QUESTION 2 HERE
-
+kitchen.order('fat elvis').then(console.log).catch(console.log)
 
 // 3. Try and use the same method to order a `quesadilla`.  
 //  Since Promise Burger only serves burgers, this will throw an error.  
 //  Make sure that your Promise can be dealt with when it is rejected.
 
 // CODE FOR QUESTION 3 HERE
-
+kitchen.order('quesadilla').then(console.log).catch(console.log)
 
 // Add A Burger To The Menu
 /* *************************************************************** */
@@ -41,6 +44,8 @@ const newBurger = {
 }
 
 // CODE FOR QUESTION 4 HERE
+
+kitchen.addToMenu(newBurger).then(console.log).catch(console.log)
 
 // 5. Validate that the new item has been added to the menu by calling `readMenu` again.  
 // We only want to call `readMenu` after we get a response that is successful. 

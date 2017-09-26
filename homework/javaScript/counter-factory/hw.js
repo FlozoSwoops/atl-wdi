@@ -1,4 +1,4 @@
-// General Assembly, WDI (Web Development Immersive) Remote, Cohort 02 (R2D2)
+ // General Assembly, WDI (Web Development Immersive) Remote, Cohort 02 (R2D2)
 // Copyright (C) 2016 Matt Brendzel under the GNU General Public License.
 // See LICENSE for details.
 
@@ -52,7 +52,8 @@ const Presenter = {
     let newCounter = document.createElement('div');
     newCounter.innerHTML = 
     `<h3>Count: <span>0</span></h3> <button class='increment'> +1 </button> <button class='delete'> Delete </button>`;
-  
+    newCounter.className += "counter"
+    newCounter.
   },
   refreshCounterComponent: function(countId){
     console.log(`refresh counter component #${countId}`);
@@ -60,7 +61,7 @@ const Presenter = {
   },
   removeCounterComponent: function(countId){             // REACH
     console.log(`remove counter component #${countId}`);
-    // Your Code Here
+    
   }
 };
 

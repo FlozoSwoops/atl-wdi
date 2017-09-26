@@ -26,7 +26,7 @@ var numsGreaterThanTen = function (numsArray) {
   var result = [];
   for (var i = 0; i < numsArray.length; i++)
     if (numsArray[i] > 10) {
-      result.push.(numsArray[i]);
+      result.push(numsArray[i]);
     }
 };
 console.log(result);
@@ -71,7 +71,13 @@ var wordsWithAtLeastFiveLetters = function (words) {
 //          `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
 var allStartingWithA = function (words) {
-  // Your Code Here
+    for (i = 0; i < allstartingWithA; i++) {
+      if (words.toString().startsWith("a") || words.toString().startsWith("A") || words == [])
+    return true
+    }
+    return false 
+
+
 };
 
 // #6
@@ -79,12 +85,11 @@ var allStartingWithA = function (words) {
 // Output: `true` if there are ANY words that start with the letter 'b'
 //          (case-insensitive), `false` otherwise
 var anyStartingWithB = function (words) {
-  for (var i = 0; i < words.length; i++) {
-    if (words[i].slice(0, 1) === 'b' || words[i].slice(0, 1) === 'B') {
-      return true;
-    }
+  for (i = 0; i < anystartingWithB; i++) {
+    if (words.toString().startsWith("a") || words.toString().startsWith("A") || words == [])
+  return true
   }
-  return false;
+  return false
 };
 
 // #7
@@ -93,22 +98,34 @@ var anyStartingWithB = function (words) {
 //          `false` otherwise
 //    Assume that vowels are 'a', 'e', 'i', 'o', and 'u' (NOT 'y')
 // Edge Case: If `n` is less than zero, return `null`.
-var hasAtLeastNVowels = function (word, n) {
-  if (n > 0) {
-    if 
+var hasAtLeastNVowels = function(word, n) {
+  if (n < 0) {
+    return null;
   }
-};
-
+  var count = 0;
+  for (var i = 0; i < word.length; i++) {
+    if (word.charAt(i) === 'a' || word.charAt(i) === 'A' ||
+      word.charAt(i) === 'e' || word.charAt(i) === 'E' ||
+      word.charAt(i) === 'i' || word.charAt(i) === 'I' ||
+      word.charAt(i) === 'o' || word.charAt(i) === 'O' ||
+      word.charAt(i) === 'u' || word.charAt(i) === 'U'
+    ) {
+      count++;
+    }
+  }
+  return count >= n;
+}
 // #8
 // Input: an array of words
 // Output: an array of words from the original array that have at least two
 //          vowels
 var wordsWithAtLeastTwoVowels = function (words) {
-  // Your Code Here
-};
-
+  array.forEach(hasAtLeastNVowels(words[1], 2), {
+    results:push(words[i])
+  }
+  
 // #9
-// Input: an array of words
+// I0nput: an array of words
 // Output: `true` if ALL words have two or more vowels, `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
 var allHaveAtLeastTwoVowels = function (words) {
