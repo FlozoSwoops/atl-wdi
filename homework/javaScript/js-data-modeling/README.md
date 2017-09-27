@@ -39,7 +39,7 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 
 
 ```
-Write your answer here or in a separate js file.
+
 ```
 
 ### 3. Rock Concert App
