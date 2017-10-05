@@ -10,7 +10,16 @@ var methodOverride = require("method-override");
 var hbs = require("hbs");
 var logger = require('morgan');
 
+mongoose.Promise = global.Promise
+mongoose.connect('mongodb://localhost/donut_store')
 
+const db = mongoose.connection
+// lets you know when mongoose is connected
+db.on ('open', () => {
+    console.log ('Mongoose is connected')
+})
+db.on('error', (er) => console.log(err)
+)
 //======================
 // MIDDLEWARE
 //======================
@@ -33,13 +42,16 @@ var seedController = require('./controllers/seeds.js');
 app.use('/seed', seedController);
 
 //for root directory, show all donuts
-var donutsController = require('./controllers/donuts.js');
-app.use('/', donutsController);
+// var donutsController = require('./controllers/donuts.js');
+// app.use('/', donutsController);
 
 //======================
 // LISTENERS
 //======================
 //CONNECT MONGOOSE TO "donut_store"
-
+const PORT = 3000
+app.listen(PORT, () => {
+    console.log('successfully connected')
+})
 
 //CREATE THE MONGOOSE CONNECTION and SET APP TO LISTEN to 3000
