@@ -4,16 +4,18 @@
 
 var timerUI = {
   drawNumericDisplay: function(timerValue){
-    document.getElementById('numeric-display').textContent = timerValue;
     var numericDisplay = document.getElementById('numeric-display');
     numericDisplay.textContent = timerValue;
 }
   drawProgressBars: function(timerValue){
-    // Your Code Here
+    const countdown = 100 - timervalue;
+    $('.progressBars').style.width = countdown + '%'
+
   },
   drawLitFuses: function(timerValue){
-    // Your Code Here
-  },
+    var percentUnburnt = timerValue/100;
+    $('.unburnt').style.width = percentUnburnt*98 + '%';
+    $(('burnt').style.width = (1 - percentUnburnt)*98 + '%';  },
   drawCrawlers: function(timerValue){
     // Your Code Here
   }
