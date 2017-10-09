@@ -10,9 +10,9 @@ var methodOverride = require("method-override");
 var hbs = require("hbs");
 var logger = require('morgan');
 
+
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost/donut_store')
-
 const db = mongoose.connection
 // lets you know when mongoose is connected
 db.on ('open', () => {
@@ -49,6 +49,13 @@ app.use('/seed', seedController);
 // LISTENERS
 //======================
 //CONNECT MONGOOSE TO "donut_store"
+
+
+db.once('open', function () {
+    console.log("DB connected");
+});
+
+
 const PORT = 3000
 app.listen(PORT, () => {
     console.log('successfully connected')

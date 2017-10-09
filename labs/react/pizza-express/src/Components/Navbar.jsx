@@ -1,11 +1,17 @@
-import React, {Components} from 'react'
+import React, { Components } from 'react'
 
-class Navbar extends components 
+class Navbar extends Components {
 
-    render () {
-        return(
+    render() {
+        return (
             <div className="navbar">
-            <a
+                <a href="#"> Our Story </a>
+                <a href="#"> Menu </a>
+                <a href="#">Locations</a>
+                <a href="#">Contact</a>
             </div>
         )
     }
+}
+
+export default Navbar
