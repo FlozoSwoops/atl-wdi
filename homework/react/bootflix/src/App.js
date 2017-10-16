@@ -13,12 +13,19 @@ class App extends Component {
   }
 
   //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
-  _searchByTitle = () => {
+  _searchByTitle = async() => {
     console.log("Search by Title");
+    axios.get(`http:www.omdbapi.com/?apikey=31f1a94&t=${title}`)
+    await((response)=> {
+      this.setState({
+        movie: response.data
+      })
+    })
   }
 
   _searchById = () => {
     console.log("Search by ID");
+
   }
 
   //Pass _searchByTitle, _searchById, and this.state.movie to it's appropriate child components.
@@ -26,8 +33,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Search />
-        <Movie />
+        <Search _searchById={this._searchById} _searchByTitle={this._searchByTitle} />
+
+        <Movie movie={this.state.movie} />
       </div>
     );
   }
