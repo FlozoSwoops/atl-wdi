@@ -25,6 +25,12 @@ class App extends Component {
 
   _searchById = () => {
     console.log("Search by ID");
+    axios.get(`http:www.omdbapi.com/?apikey=31f1a94&t=${title}`)
+    await((response)=> {
+      this.setState({
+        movie: response.data
+      })
+    })
 
   }
 
