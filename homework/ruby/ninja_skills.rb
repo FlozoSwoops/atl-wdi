@@ -25,3 +25,14 @@ puts e
 
 d = e
 puts d
+
+#Part Four
+christine = " Hi, I'm Christine"
+likesTo = " long walks on the beach, kinda"
+
+christine + likesTo
+
+g = "2" 
+gToNumber = 2
+
+g + gToNumber
