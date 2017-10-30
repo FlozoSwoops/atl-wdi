@@ -13,9 +13,16 @@ cry() {
     foodInTummy -= 1,
     console.log(this.name + this.foodInTummy)
     console.log("Waahhh")
+}
+puke() {
+    foodInTummy --
+    console.log("food: " + this.foodInTummy = "Wah")
+}
 
-
-    }
+yawn() {
+    restedness --
+    console.log(this.name + "has current restedness of:" + this.restedness)
+}
 
 
 //from stuck section
@@ -28,6 +35,8 @@ console.log(p2)
 
 p1.cry()
 p2.cry()
+p1.puke()
+p2.yawn()
 
 
 //test out your Tamagotchies below via console.logs
