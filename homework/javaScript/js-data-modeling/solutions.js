@@ -1,5 +1,32 @@
 1.
+user
+  name
+  screenname
+  location  
+email
+  title
+  content
+  
+const station = {
+  name: String,
+  screenName: String,
+  location: String
+}
 
+const email = {
+  title: String,
+  content: String
+}
+
+const exampleUser {
+  id: 1,
+  name: "mr. bannana",
+  screenName: "i<3bannana",
+  location: "Here",
+    email:[{
+      title: "The Bannanna Memo",
+      content: "I might have a problem...."
+}
 
 2.
 Station
@@ -89,7 +116,7 @@ Playlists
       }]
     }
 
-3. 
+4. 
 
 drink:
     name: string
@@ -101,7 +128,32 @@ coffee shop
     name: string
     location: string
     
-
-
-user
+const exampleCoffeeShop = {
+  name: "BeansR'US",
+  location: "ponce market",
+    drink:[{
+      drink: "regular coffee",
+      price: 5,
+      temp: "hot"
+    }]
+}
   
+5. 
+sport: 
+  name: String,
+  contact: Boolean,
+
+team:
+  name:String
+  wins: Number
+  Loss: Number
+
+ const exampleSport ={
+   name: "football",
+   contact: true,
+    team [{
+      name: "Cowgirls",
+      wins: 0,
+      loss: 1000
+    }]
+ }
